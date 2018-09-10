@@ -1,0 +1,76 @@
+/* 
+* @Author: anchen
+* @Date:   2017-07-13 14:08:00
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-07-17 16:32:22
+*/
+
+#wrap{position: absolute; top: 0;left: 0;bottom: 0;right: 0; margin: auto; background:url(../images/bg/1.jpg) no-repeat; background-size: 100% 100%; }
+
+
+/*顶部*/
+.top{width: 100%; height: 1rem; background:url(../images/tou1.png) no-repeat; background-size: 100% 100%; display:flex; justify-content: space-between; }
+.top_rule{width: 1rem; margin-right: .3rem; display:flex; align-items: center; }
+.top_rule img{width: 100%; }
+.top_item{flex:1; display:flex; align-items: center; justify-content: center; }
+.top_item:nth-child(1){margin-left: .4rem; }
+.top_item>span{font-size: .24rem; color:white; margin-right: .1rem; }
+.numCon{width: 1.5rem; height: .48rem; background:url(../images/tou2.png) no-repeat; background-size: 100% 100%; line-height: .48rem;text-align: right;font-size: .3rem;}
+.numCon span{color:#572f22;}
+
+/*表格*/
+#lottery{width:100%; background:url(../images/deng1.png) no-repeat; background-size: 100%; overflow: hidden; }
+#lottery table{width: 78%; margin: auto; overflow: hidden; font-size: .2rem; margin-top: .4rem; margin-bottom: .5rem; }
+#lottery table td{position:relative};
+#lottery #centerTd{background:url(../images/middle.jpg) no-repeat; background-size: 100% 100%; }
+#panbg{position: absolute; left: 36%; bottom: 6%; width: 1.1rem; height: .7rem; background:url(../images/zhuxi.png) no-repeat; background-size: 100% 100%; text-align: center; line-height: .7rem; text-align: center;font-size: .3rem;color:red;}
+
+#lottery table td.active .mask{display:block;}
+#lottery table td.active2 .mask{display:block;}
+#lottery table td.active3 .mask{display:block;}
+#lottery table td.active4 .mask{display:block;}
+
+/*按钮*/
+.btnArea{width: 100%; height: 1.8rem; display:flex; align-items: center; justify-content: center; background:url(../images/bg/2.jpg) no-repeat; background-size: 100% 100%; }
+.btnArea .fx{width: 1.4rem;} 
+.btnArea .dx{width: 1rem;} 
+.btnArea .ks{width: 1.2rem;} 
+
+
+/*投注*/
+.cathectic{display:flex; justify-content: space-between; align-items: center; background:url(../images/bg/3.jpg) no-repeat; background-size: 100% 100%; width: 100%; height: 1rem; }
+.chc_item{width: 12%; height: .5rem; text-align: center; line-height: .5rem; color:red; background:url(../images/xiansji.png) no-repeat; background-size: 100% 100%; font-size: .24rem; }
+.chcArea{display:flex; justify-content: space-between; align-items: center; background:url(../images/bg/4.jpg) no-repeat; background-size: 100% 100%; width: 100%; height: 1.5rem; }
+.chcArea img{width: 12%; }
+
+
+/*蒙版*/
+.mask{width:100%; height:100%; position:absolute; left:0; top:0; background:url(../images/kaijiang.png) no-repeat; background-size: 100% 100%; display:none; }
+
+/*蒙版背景*/
+.moskBg{position: absolute;top: 0;left: 0;right: 0;bottom:0; background:rgba(0, 0, 0, 0.7); }
+.moskBg_con{position: absolute;top: 0;left: 0;right: 0;bottom:0; background:url(../images/step/1.png) no-repeat; background-size: 100% 100%; }
+
+/*改变layer*/
+.layui-layer{background:none !important; box-shadow:none !important; }
+
+/*规则弹窗*/
+.ruleLayer{width: 5.5rem; height: 8rem; padding-top: .5rem; }
+.rule_close{position: absolute; right: .2rem; top: 0; width: .5rem; height: .5rem; background:url(../images/layer/x.png) no-repeat; background-size: 100% 100%; }
+.rule_con{width: 95%; height: 6rem; margin:auto; background:url(../images/layer/youxiguize.png) no-repeat; background-size: 100% 100%; font-size: .2rem; color:white; padding:.7rem 0; padding-bottom: .2rem; }
+.rule_con_in{height: 100%; overflow:scroll; }
+.rule_con_in div{width: 90%; height: 2rem; margin:auto; }
+.rule_return{width: 90%; height: .6rem; margin:.2rem auto; background:url(../images/layer/fanhuiyouxi.png) no-repeat; background-size: 100% 100%; text-align: center; line-height: .6rem; font-size: .28rem; color:white; }
+
+
+@font-face {
+      font-family: 'pinghei';
+      src:url('../digifaw.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+.fonts{
+    font-family: 'pinghei';
+    color:red;
+}

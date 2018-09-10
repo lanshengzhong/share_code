@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes" />    
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=yes"/>
+        <meta name="msapplication-tap-highlight" content="no" />
+        <script type="text/javascript">
+            (function (doc, win) {var docEl = doc.documentElement, resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function () {var clientWidth = docEl.clientWidth; if (!clientWidth) return; if(clientWidth>=640){docEl.style.fontSize = '100px'; }else{docEl.style.fontSize = 100 * (clientWidth / 640) + 'px'; } }; if (!doc.addEventListener) return; win.addEventListener(resizeEvt, recalc, false); doc.addEventListener('DOMContentLoaded', recalc, false); })(document, window);
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="js/layer/mobile/need/layer.css" />
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/layer/layer.js"></script>
+        <script type="text/javascript" src="js/ready.js"></script>
+        <script type="text/javascript" src="js/roll.js"></script>
+        <script type="text/javascript" src="js/click.js"></script>
+        <script type="text/javascript" src="js/public.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            
+            <!-- 顶部 -->
+            <section class="top">
+                <div class="top_item">
+                    <span>输赢</span>
+                    <div class="numCon fonts"><span class="l_score" style="color:red;">0</span></div>
+                </div>
+                <div class="top_item">
+                    <span>持有</span>
+                    <div class="numCon fonts"><span class="r_score" style="color:red;">50</span></div>
+                </div>
+                <div class="top_rule">
+                    <img src="images/role.png" alt="" />
+                </div>
+            </section>
+    
+            <!-- 主要部分 -->
+            <main id="lottery">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="lottery-unit lottery-unit-0"><img src="images/table_item/juzi.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-1"><img src="images/table_item/lingd.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-2"><img src="images/table_item/BAR-2.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-3"><img src="images/table_item/BAR-3.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-4"><img src="images/table_item/pingg.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-5"><img src="images/table_item/pingg-3.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-6"><img src="images/table_item/ningb.png"><div class="mask"></div></td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-23"><img src="images/table_item/lingd-3.png"><div class="mask"></div></td>
+                    <td colspan="5" rowspan="5" id="centerTd" style="background:url(images/middle.jpg) no-repeat;background-size: 100% 100%;">
+                        <div id="panbg" class="fonts"> 20 </div>
+                    </td>
+                    <td class="lottery-unit lottery-unit-7"><img src="images/table_item/xg.png"><div class="mask"></div></td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-22"><img src="images/table_item/pingg.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-8"><img src="images/table_item/xg-3.png"><div class="mask"></div></td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-21"><img src="images/table_item/luck.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-9"><img src="images/table_item/luck.png"><div class="mask"></div></td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-20"><img src="images/table_item/xx.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-10"><img src="images/table_item/pingg.png"><div class="mask"></div></td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-19"><img src="images/table_item/xx-3.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-11"><img src="images/table_item/juzi-3.png"><div class="mask"></div></td>
+                </tr>
+                <tr>
+                    <td class="lottery-unit lottery-unit-18"><img src="images/table_item/ningb-3.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-17"><img src="images/table_item/ningb.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-16"><img src="images/table_item/pingg.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-15"><img src="images/table_item/77.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-14"><img src="images/table_item/77-3.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-13"><img src="images/table_item/lingd.png"><div class="mask"></div></td>
+                    <td class="lottery-unit lottery-unit-12"><img src="images/table_item/juzi.png"><div class="mask"></div></td>
+                </tr>
+            </table>
+            </main>
+
+            <!-- 按钮1 -->
+            <section class="btnArea">
+                <img src="images/btn/left.png" class="fx btns lfx" alt=""  data-url="left"/>
+                <img src="images/btn/right.png" class="fx btns rfx" alt=""  data-url="right"/>
+                <img src="images/btn/xiao.png" class="dx btns" alt=""  data-url="xiao"/>
+                <img src="images/btn/da.png" class="dx btns" alt=""  data-url="da"/>
+                <img src="images/btn/kais.png" class="ks btns" data-url="kais"/>
+            </section>
+
+            <!-- 投注 -->
+            <section class="cathectic">
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>
+                <div class="chc_item fonts">1035</div>    
+            </section>
+
+            <!-- 投注按钮 -->
+            <section class="chcArea">
+                <img src="images/btn/bar.png" alt="" class="btns" data-url="bar"/>
+                <img src="images/btn/77.png" alt="" class="btns" data-url="77"/>
+                <img src="images/btn/xingx.png" alt="" class="btns" data-url="xingx"/>
+                <img src="images/btn/xg.png" alt="" class="btns" data-url="xg"/>
+                <img src="images/btn/lingd.png" alt="" class="btns" data-url="lingd"/>
+                <img src="images/btn/nb.png" alt="" class="btns" data-url="nb"/>
+                <img src="images/btn/juz.png" alt="" class="btns" data-url="juz"/>
+                <img src="images/btn/ping.png" alt="" class="btns" data-url="ping"/>
+            </section>
+
+            <div class="moskBg none">
+                <div class="moskBg_con">
+<!--                     <div class="ruleLayer">
+                        <div class="rule_close" onclick="closeLayer();"></div>
+                        <div class="rule_con">
+                            <div class="rule_con_in">
+                                <div>
+                                    1.苹果1赔5，橘子1赔10，柠檬1赔15，铃铛1赔15，西瓜1赔20，星星1赔30,771赔40，BARx50则1赔50，BARx120则1赔120；
+                                    <br />
+                                    特殊道具：lucky,随机触发一下情况 <br />
+                                    (1)免费摇奖3次 <br />
+                                    (2)下免费摇奖一次，可中3个水果大奖 <br /><br />
+                                </div>
+                                                            <div>
+                                    1.苹果1赔5，橘子1赔10，柠檬1赔15，铃铛1赔15，西瓜1赔20，星星1赔30,771赔40，BARx50则1赔50，BARx120则1赔120；
+                                    <br />
+                                    特殊道具：lucky,随机触发一下情况 <br />
+                                    (1)免费摇奖3次 <br />
+                                    (2)下免费摇奖一次，可中3个水果大奖 <br /><br />
+                                </div>
+                                                            <div>
+                                    1.苹果1赔5，橘子1赔10，柠檬1赔15，铃铛1赔15，西瓜1赔20，星星1赔30,771赔40，BARx50则1赔50，BARx120则1赔120；
+                                    <br />
+                                    特殊道具：lucky,随机触发一下情况 <br />
+                                    (1)免费摇奖3次 <br />
+                                    (2)下免费摇奖一次，可中3个水果大奖 <br /><br />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="rule_return" onclick="closeLayer();">返回游戏</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
